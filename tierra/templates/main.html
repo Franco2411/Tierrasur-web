@@ -5,18 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tierrasur S.R.L</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="../static/img/fav.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="padre">
         <header class="header">
-            <div class="logo">LOGO</div>
+            <div class="logo"><img src="../static/img/tierrasur.png" alt="Logo Tierrasur"></div>
+            <div class="campania"><h2>Campaña 20/21</h2></div>
         </header>
         {% for message in get_flashed_messages() %}
         <div class="flash">{{ message }}</div>
         {% endfor %}
         <div class="formulario">
-            <form method="GET" class="form"></form>
+            <form method="GET" class="form">
+                <div class="tabla">
+                    <table>
+                        <thead>
+                           <tr>
+                               <th>Unidad Productiva</th>
+                               <th>N° de Lote</th>
+                               <th>Actividad</th>
+                               <th>Labores</th>
+                               <th>Semillas</th>
+                               <th>Agroquímicos</th>
+                               <th>Fertilizantes</th>
+                               <th>Varios</th>
+                           </tr> 
+                        </thead>
+                        <tbody>
+                           <tr>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                           </tr> 
+                            <tr>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                           </tr>
+                            <tr>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                               <td>lorem</td>
+                           </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
 
+        </div>
+        <div class="excel">
+            <form method="POST" class="excel-form">
+                <input type="submit" value="DESCARGAR .XLS">
+            </form>
         </div>
     </div>
    
