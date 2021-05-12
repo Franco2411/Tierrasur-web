@@ -3,7 +3,7 @@ from flask import Flask
 def create_app():
     app = Flask(__name__)
     app.config.from_mapping(
-        MI_KEY='millavelindaysegura'
+        MI_KEY='mi_llave'
     )
 
     from . import main
