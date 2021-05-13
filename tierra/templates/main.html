@@ -18,39 +18,13 @@
         {% for message in get_flashed_messages() %}
         <div class="flash">{{ message }}</div>
         {% endfor %}
-        <div class="formulario">
-            <form method="GET" class="form">
-                <div class="tabla">
-                    <table>
-                        <thead>
-                           <tr>
-                               <th>Unidad Productiva</th>
-                               <th>N° de Lote</th>
-                               <th>Actividad</th>
-                               <th>Labores</th>
-                               <th>Semillas</th>
-                               <th>Agroquímicos</th>
-                               <th>Fertilizantes</th>
-                               <th>Varios</th>
-                           </tr> 
-                        </thead>
-                        <tbody>
-                           <tr>
-                               <td>lorem</td>
-                               <td>lorem</td>
-                               <td>lorem</td>
-                               <td>lorem</td>
-                               <td>lorem</td>
-                               <td>lorem</td>
-                               <td>lorem</td>
-                               <td>lorem</td>
-                           </tr> 
-                        </tbody>
-                    </table>
-                </div>
-            </form>
-
-        </div>
+       <form method="POST" class="form-date">
+            <div class="form-date__div">
+                <label for="datee">Fecha</label>
+                <input type="date" name="datee" id="date">
+                <input type="submit" value="Buscar" id="search">
+            </div>
+       </form> 
         <div class="excel">
             <form method="POST" class="excel-form">
                 <input type="submit" value="DESCARGAR .XLS">

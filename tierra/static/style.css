@@ -36,54 +36,32 @@ body {
         }
         
     
-    .formulario {
-            height: 600px;
-            background-color: #fff;
-            margin: 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start; 
-            align-items: flex-start;
-            border-radius: 16px;
-            box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
-            overflow: hidden;
-            
+    .form-date {
+        margin: auto;
     }
-        .form {
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-
+        .form-date__div label {
+            display: block;
+            margin-bottom: 4px;
+            color: white;
+            font-size: 1.3em;
+            font-weight: 900;
         }
-            .tabla {
-                width: 100%;
-                height: auto;
-                text-align: center;
-            }
-            .tabla table {
-                height: auto;
-                width: 100%;
-                border-collapse: collapse;
-            }
-
-            .tabla table tbody tr:nth-child(even) {
-                background-color: rgba(28,90,41,0.5);
-                color: #fff;
-            }
-
-            
-            .tabla table tr th {
-                width: 300px;
-                height: 50px;
-                background-color: rgb(28, 90, 41); 
-                margin: 0;
-                color: #fff;
-            }
-            .tabla table tr td {
-                height: 50px;
-            }
+        .form-date__div input {
+            margin-right: 5px;
+        }
+        #search {
+            color: #fff;
+            background-color: rgba(23,73,33,1);
+            box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+            border: none;
+            border-radius: 6px;
+            padding: 8px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        #search:hover {
+            background-color: rgba(23,73,50);
+        }
     
     .excel {
         display: flex;
